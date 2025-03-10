@@ -1,0 +1,136 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo e fundo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* Seção de Produtos */
+#produtos {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#produtos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.produtos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.produto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.produto h3 {
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+.produto button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.produto button:hover {
+    background-color: #218838;
+}
+
+/* Seção de Contato */
+#contato {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#form-contato input, #form-contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#form-contato button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#form-contato button:hover {
+    background-color: #0056b3;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
