@@ -1,85 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Shop</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="style.css">
+    <title>Pet Shop</title>
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <header>
-        <div class="logo">
-            <h1>Pet Shop</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Seção de Produtos -->
-    <section id="produtos">
-        <h2>Nossos Produtos</h2>
-        <div class="produtos-container">
-            <div class="produto">
-                <img src="images/racao_premier.webp" alt="Ração Premier">
-                <h3>Ração Premier</h3>
-                <p>Ração de alta qualidade para o seu pet.</p>
-                <button onclick="adicionarAoCarrinho('Ração Premier')">Adicionar ao Carrinho</button>
+    <header>Pet Shop Felicidade</header>
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <div class="container">
+        <section id="sobre">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Zt1pkHQx8uSl1JwTg5p8fIWUD8lyLHBbNQ&s" alt="">
+            <h2>Sobre Nós</h2>
+            <p>Somos um pet shop dedicado ao bem-estar do seu pet!</p>
+        </section>
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Banho e Tosa</h3>
+                    <img src="images/imagem1.jpg" alt="Banho e Tosa"> 
+                    <p>Deixe seu pet limpinho e cheiroso!</p>
+                    <div class="price-service">
+                        <h4>R$125,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="service">
+                <h3>Consultas</h3>
+                <img src="images/imagem3.jpg" alt="Consultas">
+                    <p>Atendimento veterinário especializado.</p>
+                    <div class="price-service">
+                        <h4>R$125,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="service">
+                <h3>Pet Shop</h3>
+                <img src="images/imagem2.jpg" alt="Pet Shopp"> 
+                    <p>Os melhores produtos para o seu pet.</p>
+                    <div class="price-service">
+                        <h4>R$125,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="produto">
-                <img src="images/Brinquedos para CãesD_NQ_NP.webp" alt="Brinquedos para Cães">
-                <h3>Brinquedo para Cães</h3>
-                <p>Brinquedo divertido e seguro para o seu cachorro.</p>
-                <button onclick="adicionarAoCarrinho('Brinquedos para Cães')">Adicionar ao Carrinho</button>
-            </div>
-            <div class="produto">
-                <img src="images/Shampoo_banho_sanol_dog_shampoo.webp" alt="Shampoo para Pets">
-                <h3>Shampoo para Pets</h3>
-                <p>Shampoo suave para o banho do seu pet.</p>
-                <button onclick="adicionarAoCarrinho('Shampoo para Pets')">Adicionar ao Carrinho</button>
-            </div>
-        </div>
-    </section>
-<!-- Menu de navegação -->
-<ul id="nav_list">
-    <li class="nav-item active">
-    <a href="#home">Início</a>
-    </li>
-    <li class="nav-item">
-    <a href="#menu">Rações</a>
-    </li>
-    <li class="nav-item">
-    <a href="#testimonials">Opiniões</a>
-    </li>
-</ul>
-<button class="btn-default">
-    Clique aqui para pedir
-</button>
-    <!-- Seção de Contato -->
-    <section id="contact">
-        <h2>Entre em Contato</h2>
-        <a>
-            <a href="tel:+5565999999999" id="phone_button"></a>
-            <button class="btn-default">
-            <i class="fa-solid fa-phone"></i>
-            </button>
-            <a href="tel:+5565999999999" id="phone_button"></a>
-            <input type="nome" id="Leticia Arruda" placeholder="Leticia Arruda" required>
-            <input type="email" id="arrudaleticia622@gmail.com" placeholder="arrudaleticia622@gmail.com" required>
-            <textarea id="mensagem" placeholder="Aqui voce encontra produtos de ótima qualidade para o seu melhor amigo,temos diversas varideades e preços sensacionais" required></textarea>
-            <button type="submit">Enviar Mensagem</button>
-        </a>
-        </form>
-    </section>
-    <!-- Rodapé -->
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Email: contato@PetShopp.com</p>
+            <p>Telefone: (11) 98765-4321</p>
+        </section>
+    </div>
     <footer>
-        <p>&copy; 2025 Pet Shop. Todos os direitos reservados.</p>
+        &copy; 2025 Pet Shop Felicidade - Todos os direitos reservados
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
