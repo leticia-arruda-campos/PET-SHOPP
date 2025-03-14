@@ -7,15 +7,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="images/imagem.patinha.png" type="image/x-icon">
+
     <title>Pet Shop</title>
 </head>
 <body>
-    <header>Pet Shop Felicidade</header>
-    <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#contato">Contato</a>
-    </nav>
+    <header>
+        <span>Pet Shop Felicidade</span>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
     <div class="container">
         <section id="sobre">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Zt1pkHQx8uSl1JwTg5p8fIWUD8lyLHBbNQ&s" alt="">
@@ -61,10 +66,26 @@
             </div>
         </section>
         <section id="contato">
-            <h2>Contato</h2>
-            <p>Email: contato@PetShopp.com</p>
-            <p>Telefone: (65) 99765-4321</p>
-        </section>
+            <div class="container">
+                <h2>Entre em Contato Conosco</h2>
+                <p>Estamos aqui para responder suas dúvidas ou receber seu feedback. Envie uma mensagem abaixo!</p>
+                <form action="#" method="POST">
+                    <div class="input-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+                    </div>
+                    <div class="input-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Escreva sua mensagem"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar</button>
+              </form>
+            </div>
+          </section>
     </div>
     <footer>
         &copy; 2025 Pet Shop Felicidade - Todos os direitos reservados
