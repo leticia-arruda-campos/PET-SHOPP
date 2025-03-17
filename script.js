@@ -1,19 +1,20 @@
-// Função para adicionar itens ao carrinho
-function adicionarAoCarrinho(produto) {
-    alert(`${produto} foi adicionado ao seu carrinho!`);
+let currentIndex = 0;
+
+function moveSlide(step) {
+    const slides = document.querySelectorAll('.carousel-item');
+    const totalSlides = slides.length;
+
+    // Remover a classe "active" de todos os slides
+    slides[currentIndex].classList.remove('active');
+
+    // Calcular o novo índice
+    currentIndex = (currentIndex + step + totalSlides) % totalSlides;
+
+    // Adicionar a classe "active" no novo slide
+    slides[currentIndex].classList.add('active');
+
+    // Atualizar o carrossel
+    const carousel = document.querySelector('.carousel');
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
 
-// Função para validar e enviar o formulário de contato
-document.getElementById('form-contato').addEventListener('submit', function(event) {
-    event.preventDefault(); // Previne o envio padrão do formulário
-
-    const nome = document.getElementById('nome').value;
-    const email = document.getElementById('email').value;
-    const mensagem = document.getElementById('mensagem').value;
-
-    if (nome && email && mensagem) {
-        alert('Mensagem enviada com sucesso! Responderemos em breve.');
-    } else {
-        alert('Por favor, preencha todos os campos.');
-    }
-});
